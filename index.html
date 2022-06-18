@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness and Media Queries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="container">
+            <div class="item text-item">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </div>
+            <div class="item form-item">
+                <div class="form-discount">
+                    <p>
+                        <span>Try it free 7 days</span> then $20/mo. thereafter
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="#" method="post">
+                        <label for="first name">First Name</label>
+                        <input class="input" type="text" placeholder="First Name" required
+                        oninput="this.setCustomValidity('')" >
+                        <span class="errorMsg">First Name cannot be empty</span>
+                        <img src="resources/images/icon-error.svg" alt="error icon" class="errorIcon">
+
+                        <label for="last name">Last Name</label>
+                        <input class="input" type="text" placeholder="Last Name" required
+                        oninput="this.setCustomValidity('')" >
+                        <span class="errorMsg">Last Name cannot be empty</span>
+                        <img src="resources/images/icon-error.svg" alt="error icon" class="errorIcon">
+                        
+                        <label for="email">Email Address</label>
+                        <input class="input" type="email" placeholder="Email Address" required
+                        oninput="this.setCustomValidity('')" >
+                        <span class="errorMsg">Looks like this is not an email</span>
+                        <img src="resources/images/icon-error.svg" alt="error icon" class="errorIcon">
+
+
+                        <label for="password">Password</label>
+                        <input class="input" type="password" placeholder="Password" required
+                        oninput="this.setCustomValidity('')" >
+                        <span class="errorMsg">Password cannot be empty</span>
+                        <img src="resources/images/icon-error.svg" alt="error icon" class="errorIcon">
+
+                        <button onclick="validateInput()">Claim your free Trial</button>
+                        <small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
